@@ -1,0 +1,95 @@
+\documentclass[a4paper]{scrartcl}
+
+\usepackage[square,numbers]{natbib}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+	
+\pagenumbering{gobble}
+
+\begin{titlepage}
+	\begin{center}
+		\vspace*{1cm}
+		
+		{\LARGE \textbf{Title}}
+		
+		\vspace{0.5cm}
+		
+		{\LARGE Title complement}
+		
+		\vspace{1.5cm}
+		
+		\textbf{Author(s) : First Name LAST NAME}
+		
+		\vspace{0.5cm}
+		
+		\textbf{Supervisor: First Name LAST NAME}
+		
+		\vfill
+		
+		State-of-the-Art for the Course\\
+		Introduction to the Scientific Approach [IHDCB339]\\
+        Prof. Pierre-Yves Schobbens \& Julien Albert 	
+		
+        \vspace{0.8cm}
+        
+		\includegraphics[width=0.3\textwidth]{figures/unamur}
+  
+		Faculty of Computer Science\\
+		University of Namur\\
+		Belgium\\
+		May 2024
+	\end{center}
+\end{titlepage}
+\newpage
+\begin{center}
+	\textbf{Abstract}
+\end{center}
+%% DELETE FROM HERE
+%%
+%% Template Presentation and Abstract 
+% explain the purpose of this document, and the fact that the proposed structure does not have to be followed and can be modified.
+
+This document is a template designed to help you write your state-of-the-art. It proposes a typical structure for your work, as well as a description of the various parts expected. This structure can, of course, be amended as required.
+The guidelines for the content in this document are complementary to the guidelines for the execution of the work presented in the student compendium.
+Finally, in the appendix you'll find a brief introduction to \LaTeX, outlining the features you'll need to write your state-of-the-art report.
+
+NB: When using this template, this part must of course be deleted (lines 52-70 in the \texttt{main.tex} file).
+\vskip1cm
+The abstract is a summary of your state-of-the-art. Its purpose is to give the potential reader an idea of the content of the manuscript and to assess its interest. It begins with a presentation of the subject and the problem you are addressing. It then briefly describes your contribution. Finally, it highlights its impact on the research topic. A good abstract doesn't have to be long - 150-200 words is usually enough. If you'd like to find out more about writing an abstract, take a look at \cite{abstract}.
+\vskip1cm
+\begin{center}
+	\textbf{Résumé}
+\end{center}
+Dans notre Faculté, on rédige le résumé en anglais ET en français, indépendemment de la langue de rédaction du document lui-même, qui est normalement l'anglais (OU le français moyennant acceptation par le promoteur). Nous avons donc rédigé le reste du document en anglais.
+
+%% DELETE UNTIL HERE
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\pagenumbering{arabic}
+
+%%
+%% Text Body
+\input{body.tex} %% It is more usual to have one file per chapter.
+
+%%
+%% References
+\bibliographystyle{ACM-Reference-Format} % Bibliographic Style Definition
+\bibliography{references} % Source file containing bibliographic references in BibTex format
+
+%%
+%% Appendix (optional)
+\appendix
+
+\input{appendix.tex}
+
+\end{document}
